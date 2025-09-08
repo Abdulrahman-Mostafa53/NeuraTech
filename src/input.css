@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+    --font-orbitron: "Orbitron", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --color-bg-color: #140C1F;
+    --color-pink: #FF2E88;
+    --color-cyan: #00C2FF;
+    --color-violet: #9D4EDD;
+}
+@layer components{
+    .grd{
+        background: linear-gradient(180deg, #FF00FF 30.29%, #00C2FF 92.79%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+/* Creating Change with Intelligent Artificial Intelligence */
+

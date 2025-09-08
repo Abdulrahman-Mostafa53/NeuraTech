@@ -1,0 +1,26 @@
+{
+  "name": "neuratech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./build/css/style.css --watch",
+    "prettier": " npx prettier --write \"**/*.html\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdulrahman-Mostafa53/NeuraTech.git"
+  },
+  "author": "Abdulrahman Mostafa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abdulrahman-Mostafa53/NeuraTech/issues"
+  },
+  "homepage": "https://github.com/Abdulrahman-Mostafa53/NeuraTech#readme",
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.1.13"
+  }
+}
