@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -15,21 +14,14 @@
     --container-xs: 20rem;
     --container-sm: 24rem;
     --container-md: 28rem;
-    --container-lg: 32rem;
     --container-xl: 36rem;
     --container-4xl: 56rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
-    --text-sm: 0.875rem;
-    --text-sm--line-height: calc(1.25 / 0.875);
-    --text-lg: 1.125rem;
-    --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
     --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-light: 300;
     --font-weight-bold: 700;
     --leading-normal: 1.5;
@@ -214,35 +206,11 @@
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
-  .top-40 {
-    top: calc(var(--spacing) * 40);
-  }
-  .top-50 {
-    top: calc(var(--spacing) * 50);
-  }
-  .top-70 {
-    top: calc(var(--spacing) * 70);
-  }
   .top-80 {
     top: calc(var(--spacing) * 80);
   }
-  .top-90 {
-    top: calc(var(--spacing) * 90);
-  }
   .top-91 {
     top: calc(var(--spacing) * 91);
-  }
-  .top-92 {
-    top: calc(var(--spacing) * 92);
-  }
-  .top-95 {
-    top: calc(var(--spacing) * 95);
-  }
-  .top-100 {
-    top: calc(var(--spacing) * 100);
-  }
-  .top-850 {
-    top: calc(var(--spacing) * 850);
   }
   .-right-20 {
     right: calc(var(--spacing) * -20);
@@ -267,6 +235,9 @@
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
+  }
+  .-z-10 {
+    z-index: calc(10 * -1);
   }
   .-z-\[1\] {
     z-index: calc(1 * -1);
@@ -307,17 +278,8 @@
   .-mt-4 {
     margin-top: calc(var(--spacing) * -4);
   }
-  .mt-6 {
-    margin-top: calc(var(--spacing) * 6);
-  }
-  .mt-7 {
-    margin-top: calc(var(--spacing) * 7);
-  }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
-  }
-  .mt-9 {
-    margin-top: calc(var(--spacing) * 9);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -411,6 +373,9 @@
   .-rotate-180 {
     rotate: calc(180deg * -1);
   }
+  .rotate-90 {
+    rotate: 90deg;
+  }
   .resize {
     resize: both;
   }
@@ -461,8 +426,14 @@
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\.\.\/imgs\/stars-mobile\.png\)\] {
+    background-image: url(../imgs/stars-mobile.png);
+  }
   .bg-\[url\(\.\.\/imgs\/stars\.png\)\] {
     background-image: url(../imgs/stars.png);
+  }
+  .bg-\[url\(\.\.\/imgs\/starsmobile\.png\)\] {
+    background-image: url(../imgs/starsmobile.png);
   }
   .from-\[\#001322b0\] {
     --tw-gradient-from: #001322b0;
@@ -470,6 +441,10 @@
   }
   .from-70\% {
     --tw-gradient-from-position: 70%;
+  }
+  .to-\[\#9b00746b\] {
+    --tw-gradient-to: #9b00746b;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-\[\#f800ba6b\] {
     --tw-gradient-to: #f800ba6b;
@@ -486,12 +461,6 @@
   }
   .py-15 {
     padding-block: calc(var(--spacing) * 15);
-  }
-  .py-16 {
-    padding-block: calc(var(--spacing) * 16);
-  }
-  .py-20 {
-    padding-block: calc(var(--spacing) * 20);
   }
   .text-center {
     text-align: center;
