@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @theme {
     --font-orbitron: "Orbitron", sans-serif;
     --font-inter: "Inter", sans-serif;
@@ -8,12 +7,80 @@
     --color-cyan: #00C2FF;
     --color-violet: #9D4EDD;
 }
+@layer base{
+
+}
 @layer components{
-    .grd{
-        background: linear-gradient(180deg, #FF00FF 30.29%, #00C2FF 92.79%);
-        background-clip: text;
+    .main-bt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background: linear-gradient(110.44deg, rgba(255, 46, 136, 0.6768) 38.98%, rgba(255, 119, 255, 0.6696) 83.92%);
+        box-shadow: 0px 0px 26.5px rgba(252, 109, 217, 0.3), inset -2px 6px 4px rgba(255, 255, 255, 0.25);
+        border-radius: 30px;
+        color: white;
+        padding: 10px 20px;
+        font: 600 13px "inter";
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+    .main-bt::after{
+        content: "";
+        position: absolute;
+        z-index: -5;
+        background: linear-gradient(110.44deg, rgba(255, 46, 136, 0.6768) 38.98%, rgba(255, 119, 255, 0.6696) 83.92%);;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        filter: blur(4.45px);
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+        transition-property: filter padding;
+        transition-duration:   0.2s;
+    }
+    .main-bt:hover::after{
+        padding: 20px;
+        filter: blur(8px);
+    }
+    .main-bt::before{
+        content: "";
+        position: absolute;
+        z-index: -6;
+        background: conic-gradient(from 0deg at center,white,white);
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        padding: 20px;
+        filter: blur(0);
+        opacity: 0.8;
+     
+    }
+    .grad-text{
+        background: linear-gradient(180deg, #FF00FF 30.29%, #a200ff 92.79%);
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
+/* Rectangle 6 */
+
+
+/* gradiend */
+/* Rectangle 5 */
 /* Creating Change with Intelligent Artificial Intelligence */
 
+
+
+
+/* gradiend */
+/* background: linear-gradient(110.44deg, rgba(255, 46, 136, 0.6768) 38.98%, rgba(255, 119, 255, 0.6696) 83.92%); */
+
+
+/* Rectangle 6 */
+
+
+
+/* Rectangle 5 */
+
+
+
+/* gradiend */

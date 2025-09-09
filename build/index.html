@@ -8,11 +8,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body class="bg-bg-color">
-    <header class="container px-4 mx-auto">
-        <h1 class="font-inter text-violet font-bold text-9xl grd">hello world</h1>
-    </header>
+    <main class="relative overflow-hidden h-screen sm:h-fit xl:h-screen ">
+        <div class="absolute size-full bg-[url(../imgs/stars.png)] bg-cover">
+            <div class="bg-linear-to-b from-[#001322b0] from-70% to-[#f800ba6b] size-full"></div>
+            <img src="imgs/main overlays/glare 2.webp" alt="" class="absolute right-0 -bottom-30 w-md mix-blend-plus-lighter opacity-50 -rotate-180">
+            <img src="imgs/main overlays/glare 2.webp" alt="" class="absolute -bottom-40 -w-md mix-blend-plus-lighter opacity-20">
+            <img src="imgs/main overlays/glare 1.webp" alt="" class="absolute w-md mix-blend-plus-lighter top-0 opa">
+            <img src="imgs/main overlays/glare 2.webp" alt="" class="absolute bottom-0 -w-md mix-blend-plus-lighter opacity-50">
+            <img src="imgs/main overlays/glare 2.webp" alt="" class="absolute top-1/2 -translate-y-1/2 max-w-xs mix-blend-plus-lighter opacity-20">
+            <img src="imgs/main overlays/glare 2.webp" alt="" class="absolute top-1/2 -translate-y-1/2 max-w-3xs mix-blend-plus-lighter opacity-20">
+            <img src="imgs/main overlays/glare 3.webp" alt="" class="absolute top-0 right-0 -translate-y-1/2 max-w-4xl mix-blend-plus-lighter opacity-70">
+            <img src="imgs/main overlays/glare 3.webp" alt="" class="absolute top-0 right-0 -translate-y-1/2 max-w-sm mix-blend-plus-lighter opacity-40">
+            <img src="imgs/main overlays/glare 3.webp" alt="" class="absolute top-0 -right-20 -translate-y-1/2 max-w-xs mix-blend-plus-lighter">
+        </div>
+        <header class=" container px-4 mx-auto py-10 flex justify-between items-center gap-6 lg:gap-20 z-50 relative max-w-[1200px] ">
+            <div class="w-42">
+                <img src="imgs/Logo.png" alt="" class="-mt-4">
+            </div>
+            <div class="w-8 md:hidden">
+                <img src="imgs/burger-menu.svg" alt="burger menu" class="w-full">
+            </div>
+            <nav class="hidden md:flex justify-between flex-1 max-w-xl gap-3">
+                <a href="#Features" class="font-orbitron text-[10px] font-light text-white lg:text-xs tracking-[3px]">Features</a>
+                <a href="#Features" class="font-orbitron text-[10px] font-light text-white lg:text-xs tracking-[3px] text-nowrap">About Us</a>
+                <a href="#Features" class="font-orbitron text-[10px] font-light text-white lg:text-xs tracking-[3px]">Plans</a>
+                <a href="#Features" class="font-orbitron text-[10px] font-light text-white lg:text-xs tracking-[3px]">Contact</a>
+                <a href="#Features" class="font-orbitron text-[10px] font-light text-white lg:text-xs tracking-[3px]">Testimonials</a>
+            </nav>
+            <button class="hidden md:flex main-bt text-nowrap ">
+                Join Us
+            </button>
+        </header>
+        <hero class="container px-4  py-20 mx-auto flex flex-col-reverse items-center gap-14 relative z-10 md:flex-row max-w-[1200px]">
+            <div class="text-center md:w-1/2 md:text-left md:items-start flex flex-col items-center z-50 relative">
+                <img src="imgs/main overlays/black.webp" class="absolute -top-50 -z-[1]  h-[700px] md:-left-40" alt="">
+                <img src="imgs/main overlays/black.webp" class="absolute -top-50 -z-[1]  h-[700px] md:-left-40" alt="">
+                <h2 class="text-3xl/snug tracking-[4px] font-bold font-orbitron text-white mb-2.5 max-w-4xs md:max-w-xs md:text-2xl/normal">
+                    Creating Change 
+                    with <span class="grad-text">Intelligent</span> Artificial 
+                    Intelligence
+                </h2>
+                <p class="text-[15px]/loose tracking-[3px] text-gray-200 font-inter font-light max-w-85">NeuraTech AI builds powerful and
+                     ethical intelligence solutions
+                      that help businesses innovate,
+                       scale, and lead in the digital
+                        era.</p>
+         
+
+            <div class="flex justify-between gap-10 mt-10">
+                <button class="main-bt rounded-md before:rounded-md after:rounded-md">Get Started</button>
+                <button class="main-bt rounded-md before:rounded-md after:rounded-md">Learn More</button>
+            </div>
+            </div>
+            <div class="max-w-80 md:w-1/2 md:max-w-1/2 relative flex justify-center items-center">
+                <img src="imgs/robot1.png" alt="robot" class="relative z-20 md:-ml-9 md:max-w-full">
+                <img src="imgs/glow-sphere.png" class="absolute -top-25 -left-10 md:-left-5 md:-top-15 z-0 w-[400px] max-w-[600px] blur-2xl md:max-w-full md:w-full" alt="">
+                <img src="imgs/glow-sphere.png" class="absolute -top-25 -left-10 md:-left-5 md:-top-15 z-10 w-[400px] max-w-[600px]  md:max-w-full md:w-full " alt="">
+                <img src="imgs/glow-sphere.png" class="absolute -top-25 mix-blend-plus-lighter  -left-10 md:-left-5 md:-top-15 z-10 w-[400px] max-w-[600px] md:max-w-full md:w-full" alt="">
+                <img src="imgs/main overlays/fire 1.webp" alt="" class="absolute top-40 w-4xs left-1/2 -translate-x-1/2 -rotate-90 z-20 mix-blend-plus-lighter md:max-w-full md:w-full md:top-1/2 -translate-y-1/2 md:rotate-0 md:-left-10">  
+                <img src="imgs/main overlays/fire 2.webp" alt="" class="absolute top-70 w-4xs left-1/2 -translate-x-1/2 -rotate-90 z-10 mix-blend-plus-lighter md:max-w-full md:w-full md:top-1/2 -translate-y-1/2 md:rotate-0 md:-left-20">
+            </div>
+            
+        </hero>
+    </main>
 
 </body>
 </html>
