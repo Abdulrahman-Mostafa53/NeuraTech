@@ -58,9 +58,6 @@
         }
     }
 }
-@layer base{
-
-}
 @layer components{
     .main-bt{
         display: flex;
@@ -124,4 +121,11 @@
         box-shadow: 1px 1px 10px rgba(58, 58, 58, 0.356);
         border-radius: 100%;
     }
+    .box-a{
+        background: linear-gradient(90deg, rgba(58, 58, 58, 0.137) 28.44%, rgba(198, 198, 198, 0.137) 49.91%, rgba(58, 58, 58, 0.137) 71.38%);
+        border-width: 2px;
+        border-image: linear-gradient(to right,#ffffff00 5%,#ffffff7c,#ffffff00 95%) 1;
+
+    }
 }
+
