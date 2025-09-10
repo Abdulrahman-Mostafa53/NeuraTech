@@ -6,6 +6,57 @@
     --color-pink: #FF2E88;
     --color-cyan: #00C2FF;
     --color-violet: #9D4EDD;
+
+    --animate-sphere1: sphere1 2s ease-in-out infinite;
+    @keyframes sphere1 {
+        0%{
+            transform:translateY(0px)
+        }
+        60%{
+           transform:rotate(180deg) translateY(20px); 
+        }
+        100%{
+            transform:rotate(360deg) translateY(0px)
+        }
+    }
+    --animate-sphere2: sphere2 5s linear infinite;
+    --animate-sphere3: sphere2 8s linear infinite reverse;
+    @keyframes sphere2 {
+        0%{
+            transform:scale(1)
+        }
+        60%{
+           transform:rotate(180deg) scale(1.05); 
+        }
+        100%{
+            transform:rotate(360deg) scale(1)
+        }
+    }
+    --animate-robot: robot 3s ease-in-out infinite;
+    @keyframes robot{
+        0%{
+            transform: translateY(0)
+        }
+        50%{
+            transform: translateY(20px)
+        }
+        100%{
+            transform: translateY(0)
+        }
+    }
+    --animate-fire1: fire1 5s ease-in-out infinite;
+    --animate-fire2: fire1 4.5s ease-in-out infinite;
+    @keyframes fire1{
+        0%{
+            transform: translate(0)
+        }
+        50%{
+            transform: translate(-15px,-15px)
+        }
+        100%{
+            transform: translate(0)
+        }
+    }
 }
 @layer base{
 
@@ -60,27 +111,17 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    .card-f{
+        background: linear-gradient(216.84deg, rgba(255, 255, 255, 0.018) 0%, rgba(248, 248, 248, 0.009) 37.98%, rgba(246, 246, 246, 0.018) 50.96%, rgba(255, 255, 255, 0.009) 63.94%, rgba(255, 255, 255, 0.018) 100%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset -1px 1px 22.4px rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(25px);
+        border-width: 2px; /* Define the border thickness */
+        border-style: solid; /* Essential for border-image to be visible */
+        border-image: linear-gradient(to right, #ffffff00 10%, #fcfcfc ,#ffffff00 90%) 1; 
+    }
+    .card-f:hover i{
+        transform: scale(1.1);
+        box-shadow: 1px 1px 10px rgba(58, 58, 58, 0.356);
+        border-radius: 100%;
+    }
 }
-/* Rectangle 6 */
-
-
-/* gradiend */
-/* Rectangle 5 */
-/* Creating Change with Intelligent Artificial Intelligence */
-
-
-
-
-/* gradiend */
-/* background: linear-gradient(110.44deg, rgba(255, 46, 136, 0.6768) 38.98%, rgba(255, 119, 255, 0.6696) 83.92%); */
-
-
-/* Rectangle 6 */
-
-
-
-/* Rectangle 5 */
-
-
-
-/* gradiend */
