@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@layer base{
+    *{
+        font-family: "Inter", sans-serif;
+    }
+}
 @theme {
     --font-orbitron: "Orbitron", sans-serif;
     --font-inter: "Inter", sans-serif;
@@ -58,6 +63,11 @@
         }
     }
 }
+@layer utilities{
+    .p-shadow{
+        box-shadow: 0px 4px 9.5px rgba(0, 0, 0, 0.568), 0px 4px 8.3px 1px #000000bb;;
+    }
+}
 @layer components{
     .main-bt{
         display: flex;
@@ -105,7 +115,12 @@
     }
     .grad-text{
         background: linear-gradient(180deg, #FF00FF 30.29%, #a200ff 92.79%);
-        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .grad-text-gr{
+        background: linear-gradient(to bottom,#FFFFFF,rgb(173, 173, 173));
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     .card-f{
@@ -115,6 +130,14 @@
         border-width: 2px; /* Define the border thickness */
         border-style: solid; /* Essential for border-image to be visible */
         border-image: linear-gradient(to right, #ffffff00 10%, #fcfcfc ,#ffffff00 90%) 1; 
+    }
+    .card-p{
+        background: linear-gradient(216.84deg, rgba(255, 255, 255, 0.018) 0%, rgba(248, 248, 248, 0.009) 37.98%, rgba(246, 246, 246, 0.018) 50.96%, rgba(255, 255, 255, 0.009) 63.94%, rgba(255, 255, 255, 0.018) 100%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset -1px 1px 22.4px rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(25px);
+        border-width: 1px; /* Define the border thickness */
+        border-style: solid; /* Essential for border-image to be visible */
+        border-image: linear-gradient(60deg, #ffffff00 20%, #fcfcfc7e ,#ffffff00 90%) 1; 
     }
     .card-f:hover i{
         transform: scale(1.1);
@@ -129,3 +152,5 @@
     }
 }
 
+
+/* Rectangle 27 */
